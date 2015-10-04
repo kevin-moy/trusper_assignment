@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout> {
+    UICollectionView *mainCollectionView;
+    UICollectionViewFlowLayout *layout;
+    
+}
 
 
 @end
